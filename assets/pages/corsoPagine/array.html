@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array || corso JAVA</title>
+
+    <link rel="stylesheet" href="../../css/pagineCorsoStyle.css">
+    <link rel="shortcut icon" href="../../favicon/chiccoJava.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="home" title="torna alla home">
+            <a href="../../pages/corso.html">
+            <img src="../../img/home.png">
+        </a>
+        </div>
+        
+    
+        <div class="top">
+            <h1>gli <span>array</span> nel linguaggio JAVA </h1>
+        </div><br><hr>
+        <div class="main">
+            <h2>cos'è un'array?</h2>
+            <p>Un array è una struttura dati che contiene una collezione ordinata di elementi dello stesso tipo, accessibili tramite un indice numerico. Può essere unidimensionale (vettore), bidimensionale (matrice) o multidimensionale. Gli array sono utilizzati ampiamente in programmazione per organizzare e manipolare dati in modo efficiente e sono fondamentali in molti linguaggi di programmazione.</p>
+            <br>
+            <div class="mainS">
+                <span><b>array:</b> contenitore di variabili</span>
+                <br>
+                <h4>pensalo graficamente: </h4>
+                <table style="text-align: center;margin-left: 33%;">
+                    <tr>
+                        <th style="font-size: 2em;">array di tipo int
+                            <td style="font-size: 1.6em;color: aquamarine;">variabile 1</td>
+                            <td style="font-size: 1.6em;color: rgb(84, 209, 167);">variabile 2</td>
+                            <td style="font-size: 1.6em;color: rgb(71, 142, 118);">variabile 3</td>
+                            <td style="font-size: 1.6em;color: rgb(155, 212, 193);">variabile 4</td>
+                            <td style="font-size: 1.6em;color: rgb(51, 159, 123);">variabile 5</td>
+                        </th>
+                    </tr>
+                </table>
+            </div><br>
+            
+            
+            
+            <h5>in java si visualizza nel seguente modo: </h5>
+            <pre>
+                <code>
+                    <legend>per dichiararlo con la sua grandezza: </legend>
+                    <span title="tipo di variabile" style="cursor: cell;">int</span>[] nomeVariabile = new  <span>int</span>[grandezza array];
+                </code>
+                <code>
+                    <legend>per dichiararlo e popolarlo(la grandezza è dinamica a seconda delle cose che si dichiarano nelle parentesi graffe):</legend>
+                    <span title="tipo di variabile" style="cursor: cell;">int</span>[] nomeVariabile = {1,2,4,6,123,63412,64};
+                </code>
+              </pre>
+              <h3>accesso tramite indice</h3>
+            <p>Gli elementi all'interno di un array sono accessibili tramite un indice numerico. L'indice indica la posizione di un elemento all'interno dell'array. Gli indici degli array iniziano da zero, il che significa che il primo elemento ha l'indice 0, il secondo ha l'indice 1 e così via.</p>
+            <pre>
+                <code>
+                    <legend>accesso tramite indice: </legend>
+                    <span title="tipo di variabile" style="cursor: cell;">int</span>[] nomeVariabile = {18,2,4,6,123,63412,64};
+
+                    nomeVariabile[3]=6;
+                    <br>
+                        <span2 style="font-size: 1rem;">la matrice nella posizione 3 è uguale a 6 (alla posizione 0 l'array ha valore 18) </span2>
+                </code> 
+            </pre>
+        </div>
+    </header>
+</body>
+</html>

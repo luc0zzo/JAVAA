@@ -1,0 +1,29 @@
+body{
+    background-color: black;
+    color: rgb(17, 158, 12);
+    
+        font-family: "VT323", monospace;
+        font-weight: 400px;
+        font-style:inherit;
+        
+    
+}
+button{
+    color:  rgb(17, 158, 12);
+    text-decoration: underline  rgb(17, 158, 12);
+    font-size: 2.3rem;
+    font-family: "VT323", monospace;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 0px;
+    
+
+}
+.paragraph {
+    color:  rgb(17, 158, 12);
+    display: none;
+    margin-top: 20px;
+    font-size: 2rem;
+    
+}

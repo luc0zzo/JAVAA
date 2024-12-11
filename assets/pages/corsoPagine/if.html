@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>if/else || corso JAVA</title>
+
+    <link rel="stylesheet" href="../../css/pagineCorsoStyle.css">
+    <link rel="shortcut icon" href="../../favicon/chiccoJava.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="home" title="torna alla home">
+            <a href="../../pages/corso.html">
+            <img src="../../img/home.png">
+        </a>
+        </div>
+        
+    
+        <div class="top">
+            <h1>gli <span>if</span> nel linguaggio JAVA </h1>
+        </div>
+    </header>
+    <br>
+    <hr>
+    <div class="main">
+        <h2>cos'è un if?</h2>
+        <p>
+            L'istruzione "if" in Java è fondamentale per il controllo del flusso di un programma. Consente di eseguire un blocco di codice solo se una determinata condizione è vera. La sintassi di base è "if (condizione) { blocco di codice }". Si può anche utilizzare "else" per specificare un blocco di codice da eseguire se la condizione non è vera. Inoltre, è possibile concatenare più istruzioni "if" utilizzando "else if" per controllare più condizioni in modo sequenziale. L'istruzione "if" è ampiamente utilizzata per creare logica decisionale nei programmi Java, consentendo di gestire vari scenari e di eseguire codice in base alle condizioni del programma.
+        </p>
+        <br>
+        <div class="mainS">
+            <span><b>if:</b> condizione</span>
+        </div><br>
+        <h5>in java si visualizza nel seguente modo: </h5>
+        <pre>
+            <code>
+            <legend>if: </legend>
+            <span1 title="condizione principale">if</span1>(condizione booleana){
+                azione
+            }
+            </code>
+           
+          </pre><br><br><br>
+
+        <h3>condizione if/else</h3>
+        <p>
+            La condizione if/else è una struttura di controllo in programmazione che consente di eseguire blocchi di codice diversi in base al verificarsi di una condizione booleana. Se la condizione è vera, viene eseguito il blocco di codice sotto if, altrimenti viene eseguito il blocco di codice sotto else.
+
+        </p>
+          <pre> <code>
+            <legend>if/else :</legend>
+            <span1 title="condizione principale">if</span1>(condizione booleana){
+                azione
+            }
+            <span1 title="condizione se la principale è falsa">else</span1>(condizione booleana){
+                azione
+            }
+            
+        </code>
+        <br> </pre><br><br><br>
+        <h3>condizione if/else/else if</h3>
+        <p>
+        La struttura if/else if/else è una serie di istruzioni condizionali utilizzate per eseguire blocchi di codice diversi in base a più condizioni. Il flusso del programma procede dall'alto verso il basso e viene eseguito il primo blocco di codice il cui test di condizione è vero. Se nessuna delle condizioni è vera, viene eseguito il blocco di codice nell'istruzione else, se presente.
+        </p>
+        <pre>
+        <code>
+            <legend>if/else if/else: </legend>
+            <span1 title="condizione principale">if</span1>(condizione booleana){
+                azione
+            } <br>
+            <span1 title="condizione secondaria">else if</span1>(condizione booleana){
+                azione
+            }<br>
+            <span1 title="condizione se la principale e la secondaria 'else if' sono false">else</span1>{
+                azione
+            }
+            
+        </code></pre><br><br><br>
+        <h5>lo switch</h5>
+        <p>
+            Lo statement switch è una struttura di controllo in programmazione utilizzata per selezionare un ramo di esecuzione da un numero fisso di possibilità basate sul valore di un'espressione.<br>
+            Quando viene eseguita, l'espressione viene valutata una volta e il controllo passa al primo caso corrispondente. Se nessun caso corrisponde, il codice nel blocco default (facoltativo) viene eseguito. L'istruzione break è utilizzata per interrompere l'esecuzione del switch dopo che il caso corrispondente è stato trovato ed eseguito.
+        </p>
+        <pre>
+            <code>
+                <legend>switch: </legend>
+                <span title="condizione" style="cursor: cell;">switch</span>(espressione) {
+                    <span1 title="caso1" style="color: rgb(24, 136, 128);">case</span1> valore1:
+                        // blocco di codice se espressione è uguale a valore1<br>
+                        <span title="interruzione">break;</span>
+                    <span1 title="caso2" style="color: rgb(24, 136, 128);">case</span1> valore2:
+                        // blocco di codice se espressione è uguale a valore2<br>
+                        <span title="interruzione">break;</span>
+                    // altri casi possibili...
+                    <span title="caso di default">default</span>:
+                        // blocco di codice se nessun caso corrisponde a espressione<br>
+                }
+            </code>
+        </pre>
+    </div>
+    <br><br><br><br><br>
+    <hr><footer>
+        <br><br><br>
+        <p> Questa pagina ed i suoi collegamenti sono protetti da diritti d'autore di origine <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY</a> contattare l'autore della pagina nel caso si volesse utilizzare la fonte. La violazione di questi diritti può portare ad <b>azioni legali</b></p>
+       
+        <br><br>
+    </footer>
+</body>
+</html>

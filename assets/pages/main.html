@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>java</title>
+    <link rel="stylesheet" href="../css/mainStyle.css">
+    <link rel="shortcut icon" href="../favicon/faviconMain.png" type="image/x-icon">
+    <!--font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+</head>
+<body>
+    <a href="../../index.html"><img src="../img/main.png" height="50px" style="float: right;margin-top: 3px;"></a>
+    <div class="storia">
+        <h1>un pò di storia <span id="puntini">. . .</span></h1>
+    </div>
+    
+
+    <div id="container">
+       
+        <div class="paragraph" id="paragraph1">Il linguaggio di programmazione Java è nato nel 1991 da un progetto interno alla Sun Microsystems, ideato da James Gosling e il suo team. Inizialmente chiamato "Oak", il linguaggio fu successivamente ribattezzato Java, ispirandosi al caffè espresso preferito dai membri del team. Nel 1995, Sun Microsystems lanciò ufficialmente Java come parte della piattaforma Java Development Kit (JDK) 1.0.</div>
+        <div class="paragraph" id="paragraph2">Una delle caratteristiche fondamentali di Java è la sua portabilità, resa possibile grazie al concetto di "Write Once, Run Anywhere" (WORA). Ciò significa che il codice Java può essere scritto una sola volta e poi eseguito su qualsiasi dispositivo o sistema operativo che supporti la Java Virtual Machine (JVM), senza necessità di modifiche.</div><br>
+        <div class="paragraph" id="paragraph3">Java ha rapidamente guadagnato popolarità grazie alla sua semplicità, affidabilità e sicurezza. La sua sintassi è simile a quella di linguaggi come C++ e C, ma Java elimina molte delle complessità e delle insidie legate alla gestione della memoria grazie alla sua gestione automatica della memoria.</div><br>
+        <div class="paragraph" id="paragraph4">Un'altra caratteristica chiave di Java è la sua orientazione agli oggetti. Il linguaggio supporta l'incapsulamento, l'ereditarietà e il polimorfismo, che permettono agli sviluppatori di scrivere codice modulare, riusabile e facile da manutenere. Questo ha reso Java una scelta popolare per lo sviluppo di applicazioni su larga scala, come sistemi enterprise, applicazioni web, dispositivi mobili e molto altro ancora.</div> <br>
+        <div class="paragraph" id="paragraph5">Nel corso degli anni, Java ha continuato a evolversi con l'introduzione di nuove caratteristiche e miglioramenti. Le versioni più recenti del linguaggio hanno introdotto nuove funzionalità come le espressioni lambda, le interfacce funzionali e il modulo Java Platform Module System (JPMS), che mirano a migliorare le prestazioni, la sicurezza e la manutenibilità del codice Java. Anche se Java ha dovuto affrontare la concorrenza di altri linguaggi di programmazione nel corso degli anni, rimane uno dei linguaggi più diffusi e utilizzati nell'industria del software.</div> <br>
+        <div class="paragraph" id="paragraph5">Inoltre, Java ha una vasta eco-sistema di librerie e framework che estendono le sue funzionalità, facilitando lo sviluppo di una vasta gamma di applicazioni. Librerie come Java Standard Edition (Java SE), Java Enterprise Edition (Java EE) e Apache Maven forniscono agli sviluppatori gli strumenti necessari per creare applicazioni desktop, web e enterprise in modo efficiente e scalabile. Grazie alla sua robustezza e alla sua comprovata affidabilità, Java continua ad essere una scelta preferita per aziende e sviluppatori in tutto il mondo.</div>
+        <button id="button">prosegui</button>
+      </div>
+      <script>
+        // JavaScript per il ciclo di puntini
+        const puntini = document.getElementById("puntini");
+        const delay = 400;
+
+        setInterval(function() {
+            switch (puntini.textContent) {
+                case ".":
+                    puntini.textContent = ". .";
+                    break;
+                case ". .":
+                    puntini.textContent = ". . .";
+                    break;
+                case ". . .":
+                    puntini.textContent = ".";
+                    break;
+                default:
+                    puntini.textContent = ".";
+                    break;
+            }
+        }, delay);
+
+        // JavaScript per mostrare i paragrafi uno alla volta al click del pulsante
+        document.getElementById("button").addEventListener("click", function() {
+            var paragraphs = document.getElementsByClassName("paragraph");
+            for (var i = 0; i < paragraphs.length; i++) {
+                if (paragraphs[i].style.display === "none" || paragraphs[i].style.display === "") {
+                    paragraphs[i].style.display = "block";
+                    break;
+                }
+                if (i == 4) {
+                let b = document.getElementById("button");
+                b.innerHTML = "home"; // Correcting the property name
+                if (b.innerHTML === "home") {
+                    b.addEventListener('click', function(event) {
+                        // Codice per navigare alla home
+                        window.location.href = "../../index.html";
+                    });
+                } 
+            }
+
+
+                
+            }
+            
+        });
+
+    </script>
+</body>
+</html>
